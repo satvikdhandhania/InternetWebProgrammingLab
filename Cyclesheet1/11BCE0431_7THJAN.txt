@@ -1,0 +1,21 @@
+SATVIK DHANDHANIA	
+11BCE0431	
+07-01-2014
+
+
+
+<html>
+<body bgcolor="red">
+<title><font color="black"><center>Hello</font></center></title>
+<h1><font color="black"><center>My First Page</font></center></h1>
+</body>
+<body>
+<h4><font color="black"><align="left">Satvik Dhandhania</align></font></h4>
+<h4><font color="black"><align="left">Age:21</align></font></h4>
+<h4><font color="black"><align="left">Telephone :9830045821</align></font></h4>
+<h4><font color="black"><align="left">Address:CV Raman Room 521</align></font></h4>
+<h4><font color="black"><align="left">Pin:632014</align></font></h4>
+<h4><font color="black"><align="left">Email:kivtas@yahoo.com</align></font></h4>
+</p>Thank You </p>
+</body>
+</html>

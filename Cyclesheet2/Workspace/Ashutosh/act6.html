@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Passport Form</title>
+<style>
+#div1,#div2{
+background-color:#2A7FFF;
+margin-top:30px;
+margin-left:10px;
+margin-bottom:10px;
+}
+b{margin-left:10px;
+margin-right:10px;}
+#fname,#lname,#faname,#faocc{
+margin-left:10px;
+padding-top:10px;
+margin-bottom:10px;
+}
+#faname,#nation,#gender,#mar,#dob{margin-left:30px;margin-bottom:10px;margin-top:10px;}
+#fanam{margin-left:80px;margin-bottom:10px;}
+#faoc{margin-left:70px;}
+#fnam,#lnam{
+margin-left:50px;
+margin-bottom:10px;
+}
+#selnat{margin-left:110px;margin-top:10px;}
+#idob{margin-left:90px;margin-bottom:10px;margin-top:10px}
+#selgen{margin-left:130px;margin-top:10px;}
+#selmar{margin-left:90px;margin-top:10px;}
+#adr,#state,#dis,#pin,#phn{margin-left:30px;margin-top:10px;}
+#iadr{margin-left:90px;margin-top:10px;}
+#selstate,#iphn{margin-left:110px;margin-top:10px;}
+#idis,#ipin{margin-left:100px;margin-top:10px;}
+button{
+margin-top:20px;
+margin-left:50px;
+width:80px;
+height:30px;
+}
+</style>
+</head>
+<body style="background-color:#AAFFFF">
+<div id="div1"><b>Applicant's Information(Enter Full Name and do not use abbreviations)</b></div>
+<div id="container">
+<form nonvalidate>
+<b>1(a).</b><label id="fname">Applicant First Name: </label>
+<input type="text" id="fnam" size="40" required><br>
+<b>1(b).</b><label id="lname">Applicant Last Name: </label>
+<input type="text" id="lnam" size="40" required><br>
+<b> 2.  </b><label id="faname">Father's Name: </label>
+<input type="text" id="fanam" size="40" required><br>
+<b> 3.  </b><label id="faocc">Father's Occupation: </label>
+<input type="text" id="faoc" size="40" required><br>
+<b>4.</b><label id="nation">Nationality :</label>
+<select id="selnat" required>
+<option>Indian</option>
+<option>Non-Indian</option>
+</select><br>
+<b>5.</b><label id="dob">Date Of Birth :</label>
+<input type="date" id="idob" required><br>
+<b>6.</b><label id="gender">Gender : </label>
+<select id="selgen" required>
+<option>Male</option>
+<option>Female</option>
+</select><br>
+<b>7.</b><label id="mar">Marital status : </label>
+<select id="selmar" required>
+<option>Single</option>
+<option>Married</option>
+</select><br>
+<div id="div2"><b>Permanent Residential Address.</b></div>
+<b>8(a).</b><label id="adr">Address :</label>
+<input type="text" size="40" id="iadr" required><br>
+<b>8(b).</b><label id="state">State :</label>
+<select id="selstate" required>
+<option>Bihar</option>
+<option>Rajasthan</option>
+<option>Delhi</option>
+<option>Chandigarh</option>
+<option>Tamilnadu</option>
+</select><br>
+<b>8(c).</b><label id="dis">District  :</label>
+<input type="text" size="40" id="idis" required><br>
+<b>8(d).</b><label id="pin">Pincode  :</label>
+<input type="text" size="20" id="ipin" required><br>
+<b>8(e).</b><label id="phn">Phone   :</label>
+<input type="text" size="20" id="iphn" required><br>
+<button type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>

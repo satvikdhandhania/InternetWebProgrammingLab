@@ -1,0 +1,50 @@
+#menu{
+	font-style: Times New Roman;
+	font-size: 15px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul li{
+	display: block;
+	position: relative;
+	float: left;
+	width: 150px;
+}
+
+ul li ul{
+	display: none;
+}
+
+ul li a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	border-top: 1px solid black;
+	padding: 5px 15px 5px 15px;
+	background: grey;
+	margin-left: 1px;
+	white-space: nowrap;
+	}
+
+ul li a: hover{background: #6178ab;}
+
+li:hover ul {
+	display: block;
+	float:right;
+	position: absolute;
+}
+
+li:hover li{
+		float: none;
+		float-size: 14px;
+}
+
+li:hover a{
+	background: #745896;
+	}
+
+li:hover a:hover{
+	background: #acbfd8;
+}	

@@ -1,0 +1,165 @@
+ACTIVITY 7 
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+<title>Advanced</title>
+<link type="text/css" rel="stylesheet" href="act7.css"/>
+</head>
+
+<body>
+	<ul id="menu">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Categories</a>
+			<ul>
+				<li><a href="#">Photoshop</a></li>
+				<li><a href="#">Exterior</a></li>
+				<li><a href="#">Web Design</a>
+				<ul>
+					<li><a href="#">HTML</a></li>
+					<li><a href="#">CSS</a></li>
+				</ul></li>
+			</ul></li>
+		<li><a href="#">Most Popular</a></li>
+		<li><a href="#">Contact Us</a></li>
+	</ul>
+</body>
+---------------------------------------------------------------------------
+CSS
+
+#menu{
+	font-style: Times New Roman;
+	font-size: 15px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul li{
+	display: block;
+	position: relative;
+	float: left;
+	width: 150px;
+}
+
+ul li ul{
+	display: none;
+}
+
+ul li a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	border-top: 1px solid black;
+	padding: 5px 15px 5px 15px;
+	background: grey;
+	margin-left: 1px;
+	white-space: nowrap;
+	}
+
+ul li a: hover{background: #6178ab;}
+
+li:hover ul {
+	display: block;
+	float:right;
+	position: absolute;
+}
+
+li:hover li{
+		float: none;
+		float-size: 14px;
+}
+
+li:hover a{
+	background: #745896;
+	}
+
+li:hover a:hover{
+	background: #acbfd8;
+}	
+---------------------------------------------------------------------------------------------------------------------------------
+ACTIVITY 8 
+
+
+HTML
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Advanced</title>
+<link type="text/css" rel="stylesheet" href="act8.css"/>
+</head>
+
+<body>
+<p class="a">none</p>
+<p class="b">dotted</p>
+<p class="c">dashed</p>
+<p class="d">solid</p>
+<p class="e">double</p>
+<p class="f">grove</p>
+<p class="g">ridge</p>
+<p class="h">inset</p>
+<p class="i">outset</p>
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------------
+
+CSS
+
+
+.a{
+	border: 10px black none;
+	height: 100px;
+	width: 300px;
+}
+
+.b{
+	border: 10px red dotted;
+	height: 100px;
+	width: 300px;
+}
+
+.c{
+	border: 10px blue dashed;
+	height: 100px;
+	width: 300px;
+}
+
+.d{
+	border: 10px green solid;
+	height: 100px;
+	width: 300px;
+}
+
+.e{
+	border: 10px grey double;
+	height: 100px;
+	width: 300px;
+}
+
+.f{
+	border: 10px black groove;
+	height: 100px;
+	width: 300px;
+}
+
+.g{
+	border: 10px black ridge;
+	height: 100px;
+	width: 300px;
+}
+
+.h{
+	border: 10px black inset;
+	height: 100px;
+	width: 300px;
+}
+
+.i{
+	border: 10px black outset;
+	height: 100px;
+	width: 300px;
+}

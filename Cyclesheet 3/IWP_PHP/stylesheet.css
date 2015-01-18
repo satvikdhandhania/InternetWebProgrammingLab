@@ -1,0 +1,26 @@
+.errmsg{
+	color:red;
+	display: inline;
+	font-size: smaller;
+	font-family: "Courier New";
+}
+
+table{
+	margin: 10px;
+}
+
+table ,th, td{
+	border: 2px solid;
+	border-collapse: collapse;
+	
+}
+
+th{
+	font-weight: bold;
+}
+
+th, td{
+	padding: 2px;
+	border: 1px solid;
+	
+}

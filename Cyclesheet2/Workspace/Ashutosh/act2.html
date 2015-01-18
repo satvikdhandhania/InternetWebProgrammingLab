@@ -1,0 +1,72 @@
+<html>
+<head><title>String Handling</title>
+<style>
+h3{
+text-align:center;
+color:#447799;
+}
+p{
+text-align:center;
+margin-top:40px;
+font-weight:800;
+}
+
+</style>
+</head>
+<body>
+<form>
+<h3>String Handling</h3>
+<p>Write a sentence : <input type="text" size="40" id="sentence" value="My name is "></p>
+<p>Write your name : <input type="text" size="30" id="name" value="Ashutosh Kumar"></p>
+<p>Edit the value in textbox or Click the button for string manipulation </p>
+</form>
+<p id="add"></p>
+<p id="reverse"></p>
+<p id="count"></p>
+<center><button onclick="stringadd()">Click!</button></center>
+<script>
+function stringadd()
+{
+var sen=document.getElementById("sentence").value;
+var nam=document.getElementById("name").value;
+var string=sen.concat(nam);
+var text=string.split("").reverse().join("");
+var split = string.split(" "),
+    obj = {},cnt={};
+	var n=0,k=0;
+for (var x=0; x<split.length; x++){
+k=0;
+ if(x==0)
+ {
+ obj[n]=split[x];
+ cnt[n]=1;
+ n++;
+}
+else
+{
+for(var i=0;i<n;i++)
+{
+if(split[x]==obj[i])
+{
+cnt[i]++;
+k=1;
+}
+}
+if(k==0)
+{
+obj[n]=split[x];
+cnt[n]=1;
+n++;
+}
+}
+}
+var str="";
+for(var i=0;i<n;i++)
+str=str+obj[i]+'= '+cnt[i]+' , ';
+document.getElementById("add").innerHTML='String after adding = '+string;
+document.getElementById("reverse").innerHTML='Reverse string is = '+text;
+document.getElementById("count").innerHTML='No. of occurences of word are  '+str;
+}
+</script>
+</body>
+</html>

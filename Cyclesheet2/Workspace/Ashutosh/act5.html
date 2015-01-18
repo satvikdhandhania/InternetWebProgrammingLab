@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Digital Clock</title>
+<style>
+#div1{
+width:800px;
+height:300px;
+border:1px solid #d4ffd4;
+margin-top:170px;
+}
+#div2{
+width:700px;
+height:200px;
+
+border:50px solid #d4ffd4;
+}
+#div3{
+width:600px;
+height:100px;
+background-color:#191919;
+border:50px solid #4b4b4b;
+}
+#list{
+list-style:none;
+margin-left:5px;
+}
+#list li{
+float:left;
+margin:5px 10px 20px 25px;
+}
+#time{
+clear:both;
+font-size:35px;
+display:inline;
+margin-left:170px;
+color:white;
+}
+#ak{
+color:white;
+font-style:normal;
+margin-left:150px;
+}
+</style>
+<script>
+function starttime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+if(h>12)
+var mi="PM";
+else
+var mi="AM";
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('time').innerHTML=h+":"+m+":"+s;
+document.getElementById("ak").innerHTML=mi;
+t=setTimeout(function(){starttime()},500);
+switch(today.getDay())
+{
+case 0 : document.getElementById("SUN").style.color="white";
+break;
+case 1 : document.getElementById("MON").style.color="white";
+break;
+case 2 : document.getElementById("TUE").style.color="white";
+break;
+case 3 : document.getElementById("WED").style.color="white";
+break;
+case 4 : document.getElementById("THU").style.color="white";
+break;
+case 5 : document.getElementById("FRI").style.color="white";
+break;
+case 6 : document.getElementById("SAT").style.color="white";
+break;
+}
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+
+</script>
+</head>
+<body onload="starttime()">
+<center>
+<div id="div1">
+<div id="div2">
+<div id="div3">
+<ul id="list">
+<li id="SUN">SUN</li><li id="MON">MON</li><li id="TUE">TUE</li><li id="WED">WED</li><li id="THU">THU</li><li id="FRI">FRI</li><li id="SAT">SAT</li>
+</ul>
+<div id="time"></div>
+<b id="ak"></b>
+</div>
+</div>
+</div>
+</center>
+</body>
+</html>

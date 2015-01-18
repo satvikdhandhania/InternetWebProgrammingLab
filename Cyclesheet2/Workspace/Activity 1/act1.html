@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+  <head>
+    <title>Activity 1</title>
+    <script type="text/javascript">
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1;
+        var yyyy = today.getFullYear();
+        var h=today.getHours();
+        var g;
+        
+        if(h>=0 && h<12) g = 'Good Morning ';
+        else if(h>=12 && h<17) g = 'Good Afternoon ';
+        else if(h>=17 && h<=23) g = 'Good Evening ';
+       	var today = dd + "/" + mm + "/" + yyyy;
+        
+        window.alert(g + " Sir. \nThe date is: " + today);
+    </script>
+  </head>
+  <body style="background-color:blue;">
+  </body>
+</html>

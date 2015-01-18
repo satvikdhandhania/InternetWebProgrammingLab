@@ -1,0 +1,53 @@
+.a{
+	border: 10px black none;
+	height: 100px;
+	width: 300px;
+}
+
+.b{
+	border: 10px red dotted;
+	height: 100px;
+	width: 300px;
+}
+
+.c{
+	border: 10px blue dashed;
+	height: 100px;
+	width: 300px;
+}
+
+.d{
+	border: 10px green solid;
+	height: 100px;
+	width: 300px;
+}
+
+.e{
+	border: 10px grey double;
+	height: 100px;
+	width: 300px;
+}
+
+.f{
+	border: 10px black groove;
+	height: 100px;
+	width: 300px;
+}
+
+.g{
+	border: 10px black ridge;
+	height: 100px;
+	width: 300px;
+}
+
+.h{
+	border: 10px black inset;
+	height: 100px;
+	width: 300px;
+}
+
+.i{
+	border: 10px black outset;
+	height: 100px;
+	width: 300px;
+}

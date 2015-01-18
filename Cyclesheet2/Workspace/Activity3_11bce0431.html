@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator v1.0</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var n;
+		function eval1(Calc){
+			n=eval(Calc.screen.value);
+			Calc.screen.value=n;
+		}
+		function f1(Calc){
+			Calc.screen.value="";
+		}
+	</script>
+	<div id="container" style="background-color:#303;width:290px;">
+	  <div id="buttons" style="background-color:#C66;font-family:Arial,Helvetica,sans-serif;padding:20px;">
+	  <form name="Calc">
+       <input type="button" id="disp" name="screen" value="" style=" width:250px;height:60px;border:hidden;background-color:"#666" disabled="disabled"/><br />
+     	<input type="button" class="clears" id="C" value="C" onclick="f1(this.form)" style="color:#333;width:55px;height:50px;margin-top:20px;background-color:#FC0;border:hidden;"/><br />
+      	<input type="button" id="nine" value="9" style="color:#333;width:55px;height:50px;margin-top:10px;margin-right:5px;border:hidden;background-color:#6CF" onclick="Calc.screen.value+='9'"/>
+        <input type="button" id="8"  value="8" style="color:#333;width:55px;height:50px;border:hidden;margin-right:5px;background-color:#6CF" onclick="Calc.screen.value+='8'"/>
+        <input type="button" id="7"  value="7" style="color:#333;width:55px;height:50px;border:hidden;margin-right:5px;background-color:#6CF" onclick="Calc.screen.value+='7'"/>
+        <input type="button" id="+"  value="+" style="color:#333;width:55px;height:50px;border:hidden;background-color:#FF9" onclick="Calc.screen.value+='+'"/><br />
+        <input type="button" id="6"  value="6" style="color:#333;width:55px;height:50px;margin-top:10px;margin-right:5px;border:hidden;background-color:#6CF" onclick="Calc.screen.value+='6'"/>
+        <input type="button" id="5"  value="5" style="color:#333;width:55px;height:50px;border:hidden;margin-right:5px;background-color:#6CF" onclick="Calc.screen.value+='5'"/>
+        <input type="button" id="4"  value="4" style="color:#333;width:55px;height:50px;border:hidden;margin-right:5px;background-color:#6CF" onclick="Calc.screen.value+='4'"/>
+        <input type="button" id="x"  value="x" style="color:#333;width:55px;height:50px;border:hidden;background-color:#FF9" onclick="Calc.screen.value+='*'"/><br />
+        <input type="button" id="3"  value="3" style="color:#333;width:55px;height:50px;margin-top:10px;margin-right:5px;border:hidden;background-color:#6CF" onclick="Calc.screen.value+='3'"/>
+        <input type="button" id="2"  value="2" style="color:#333;width:55px;height:50px;border:hidden;margin-right:5px;background-color:#6CF" onclick="Calc.screen.value+='2'"/>
+        <input type="button" id="1"  value="1" style="color:#333;width:55px;height:50px;border:hidden;margin-right:5px;background-color:#6CF" onclick="Calc.screen.value+='1'"/>
+        <input type="button" id="-"  value="-" style="color:#333;width:55px;height:50px;border:hidden;background-color:#FF9" onclick="Calc.screen.value+='-'"/><br />
+        <input type="button" id="."  value="." style="color:#333;width:55px;height:50px;margin-top:10px;margin-right:5px;border:hidden;background-color:#6CF" onclick="Calc.screen.value+='.'"/>
+        <input type="button" id="0"  value="0" style="color:#333;width:55px;height:50px;border:hidden;margin-right:5px;background-color:#6CF" onclick="Calc.screen.value+='0'"/>
+        <input type="button" id="eq"  value="=" style="color:#333;width:55px;height:50px;border:hidden;margin-right:5px;background-color:#FF9" onclick="eval1(this.form)"/>
+        <input type="button" id="/"  value="/" style="color:#333;width:55px;height:50px;border:hidden;background-color:#FF9" onclick="Calc.screen.value+='/'"/><br />
+      </form>
+	  </div>
+	</div>
+</body>
+</html>

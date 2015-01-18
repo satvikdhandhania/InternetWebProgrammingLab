@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Calculator</title>
+<style>
+#div1{
+margin-top:50px;
+width:300px;
+height:300px;
+align:center;
+border: 2px solid black;
+}
+#txtara{
+margin-top:3px;
+}
+#add,#sub,#mul,#div,#mod,#equal{
+float:left;
+margin-left:5px;
+margin-top:10px;
+align-text:center;
+width:94px;
+height:40px;
+}
+#h2{
+text-align:center;
+}
+</style>
+<script>
+function add()
+{
+var x=document.getElementById("txtara").value;
+var newstr=x+" + "
+document.getElementById("txtara").value=newstr;
+}
+function sub()
+{
+var x=document.getElementById("txtara").value;
+var newstr=x+" - "
+document.getElementById("txtara").value=newstr;
+}
+function mul()
+{
+var x=document.getElementById("txtara").value;
+var newstr=x+" * "
+document.getElementById("txtara").value=newstr;
+}
+function div()
+{
+var x=document.getElementById("txtara").value;
+var newstr=x+" / "
+document.getElementById("txtara").value=newstr;
+}
+function mod()
+{
+var x=document.getElementById("txtara").value;
+var newstr=x+" % "
+document.getElementById("txtara").value=newstr;
+}
+function equal()
+{
+var x=document.getElementById("txtara").value;
+var split=x.split(" ");
+switch(split[1])
+{
+case "+": var num=parseInt(split[0])+parseInt(split[2]);
+x=x+" = "+num+" ";
+document.getElementById("txtara").value=x;
+break;
+case '-': var num=split[0]-split[2];
+x=x+" = "+num+" ";
+document.getElementById("txtara").value=x;
+break;
+case '*': var num=split[0]*split[2];
+x=x+" = "+num+" ";
+document.getElementById("txtara").value=x;
+break;
+case '/': var num=split[0]/split[2];
+x=x+" = "+num+" ";
+document.getElementById("txtara").value=x;
+break;
+case '%': var num=split[0]%split[2];
+x=x+" = "+num+" ";
+document.getElementById("txtara").value=x;
+break;
+}
+}
+</script>
+</head>
+<body>
+<center>
+<div id="div1">
+<h2>Basic Calculator</h2>
+<textarea cols="34" rows="5" id="txtara" placeholder="Enter expression like a + b  "></textarea>
+<button type="button" id="add" onclick="add()">+</button>
+<button type="button" id="sub" onclick="sub()">-</button>
+<button type="button" id="mul" onclick="mul()">*</button>
+<button type="button" id="div" onclick="div()">/</button>
+<button type="button" id="mod" onclick="mod()">%</button>
+<button type="button" id="equal" onclick="equal()">=</button>
+</div></center>
+</body>
+</html>

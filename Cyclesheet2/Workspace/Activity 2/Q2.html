@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Activity 2</title>
+  </head>
+  <body>
+    <form>
+      <span>Enter a sentence : </span><input type="text" name="sentence">
+      <input type="submit" onclick="display()";>
+    </form>
+    <script type="text/javascript">
+       function count(a)
+       {  
+          var c=0;
+          var temp;
+          var p;
+          temp=a.split(" ");
+          var n=temp.length;
+          var i,j,k;
+          for(i=0;i<n;i++)
+          {
+          	 c=1;
+             for(j=i+1;j<n;j++)                    
+             {
+             	if(temp[i]==temp[j])
+             	{
+             		c++;
+                    temp.splice(j,1);
+                    n--;
+             	}
+             }  
+             document.write("\n" +temp[i] +" : "+c);
+          }
+       }
+       function display()
+       {
+         var s=document.getElementsByName("sentence")[0].value;
+         s=s.split(" ").reverse().join(" ");
+         document.write(s + "\n");
+         count(s);
+       }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+ <body>
+       <header> 
+	      <h3>Hello<h3>  
+	      <nav>
+		  <a href="/J.A.R.V.I.S/">JARVIS</a> |
+		  <a href="/TOny/">Tony</a> |
+		  <a href="/stark">Stark</a>
+		  <nav>
+	    </header>
+	<article>
+	    <section>
+		<div id="s1"><p>Just A Rather Very Intelligent System</p></div>
+		</section>
+		<section>
+		<div id="s2"><p>EDWIN JARVIS </p></div>
+		</section>
+		<section>
+	     <div id="s3"><p>YOUR WISH IS MY COMMAND</p></div>
+		</section>	
+    </article>
+    <aside>
+		<h3>TONY STARK</h3>
+    </aside>
+	<footer>
+		<p>Thanks</p>
+	</footer>  
+</body>
+ </html>
+
+
+-----------------------------------------------------------------------
+CSS
+
+p
+{
+color:black;
+}
+h3
+{
+color:white;
+}
+a
+{
+color:orange;
+}
+header
+{
+background-color:blue;
+padding-top:25px;
+padding-bottom:25px;
+padding-right:50px;
+padding-left:50px;
+}
+article
+{
+padding-top:25px;
+padding-right:50px;
+padding-left:50px;
+background-color:red;
+float:left;
+}
+section
+{
+padding-top:25px;
+padding-right:200px;
+padding-left:200px;
+background-color:red;
+}
+#s1
+{
+padding-top:25px;
+padding-right:200px;
+padding-left:200px;
+background-color:yellow;
+}
+#s2
+{
+padding-top:25px;
+padding-right:200px;
+padding-left:200px;
+background-color:lightblue;
+}
+#s3
+{
+padding-top:25px;
+padding-right:200px;
+padding-left:200px;
+background-color:green;
+}
+aside
+{
+float:right;
+padding-top:25px;
+padding-right:50px;
+padding-left:50px;
+width:350px;
+height:300px;
+background-color:black;
+}
+footer
+{
+clear:both;
+background-color:green;
+height:100px;
+}
+
+

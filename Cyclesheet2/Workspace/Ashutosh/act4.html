@@ -1,0 +1,39 @@
+<html>
+<head><title>
+Activity 4</title>
+<script>
+function show()
+{
+x=document.getElementById("name");
+y=document.getElementById("marks");
+z=document.getElementById("space");
+var grade;
+if(y.value>90)
+grade="S";
+else if(y.value>80)
+grade="A";
+else if(y.value>70)
+grade="B";
+else if(y.value>60)
+grade="C";
+else if(y.value>55)
+grade="D";
+else if(y.value>50)
+grade="E";
+else
+grade="F";
+if(grade=="F")
+sta="Fail";
+else
+sta="Pass";
+z.innerHTML+=("<hr>Name: "+x.value+"<br>Grade: "+grade+"<br>Status: "+sta);
+}
+</script>
+</head>
+<body>
+Enter name: 
+<input id="name"/><br>
+Enter the marks: <input id="marks"/><br>
+<button onclick="show()">Submit</button>
+<div id="space"/>
+</body>

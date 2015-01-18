@@ -1,0 +1,124 @@
+Q1>
+
+
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:rgb(123,200,13);font-family:verdana;">
+	<h1 style="text-align:center">My Personal Details</h1>
+	<p> <b>Name:</b><i>Satvik Dhandhania<i></p>
+	<p> <b>Age :</b> 21</p>
+	<p> <b>Telephone :</b>9839945821 </p>
+	<p>  <b>Address ::</b> C.V. Raman Block.Room: 521</p>
+	<p> <b>Pin Code:</b>632014</p>
+	<p> <b> Email Id:</b> kivtas@yahoo.com</p><br><br>
+	<p style="text-align:center"> My name is satvik.I am a third year B.Tech student.I am from Kolkata but currently residing in Vellore .</p>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q2A>
+
+<!DOCTYPE html>
+<html>
+<title>My Likes and Dislikes</title>
+<body style="background-color:rgb(123,200,13);font-family:verdana;text-align:center;">
+	<h1>LIKES</h1>
+	
+	<ul>
+	<li>Music</li>
+	<li>Angels And Demons</li>
+	<li>Games</li>
+	<li>Reading Novels</li>
+	<li>Travelling</li>
+	</ul>
+	<h1>DISLIKES</h1>
+	<ul>
+	<li>Smoking</li>
+	<li>Arrow</li>
+	<li>Sleeping</li>
+	</ul>
+	<br><br><br>
+	<ol>
+	<li>Sem I: 9.14</li>
+	<li>Sem II:8.96</li>
+	<li>Sem III:9.25</li>
+	<li>Sem IV:9.00</li>
+	<li>Sem V:9.00</li>
+	</ol>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q2B>
+
+<!DOCTYPE html>
+<html>
+<title>My Movies</title>
+<body style="background-color:rgb(255,200,13);font-family:verdana;text-align:center;">
+    <iframe src="cyclesheet1_2a.html" name="iframe_a"></iframe>
+	<h1>MOVIES</h1>
+	<ul>
+	<li><a href="batman.html" target="iframe_a">BATMAN</a></li>
+	<li><a href="gatsby.html" target="iframe_a">The Great Gatsby</a></li>
+</ul>
+	
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<title>BATMAN.html</title>
+<body background="batman.jpeg">
+ <p style="text-align:center;color:white;">IM BATMAN</p>
+</body>
+</html>
+
+------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<title>gatsby.html</title>
+<body background="gatsby.jpeg">
+ <p style="text-align:center;color:white;">Old Sport</p>
+</body>
+</html>
+-----------------------------------------------------------------------------------------
+Q2C>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h4>With cellpadding:</h4>
+<table border="1" 
+cellpadding="10">
+<tr>
+  <th>Source</th>
+  <th>Destination</th>
+  <th>Fare Details</th>
+</tr>   
+<tr>
+  <td>Katpadi</td>
+  <td>Chennai</td>
+  <td><a href="cyclesheet1_2c.html"</td>
+</tr>   
+<tr>
+  <td>Katpadi</td>
+  <td>Bangalore</td>
+  <td><a href="cyclesheet1_2c.html"</td>
+</tr>   
+<tr>
+  <td>Kolkata</td>
+  <td>Katpadi</td>
+  <td><a href="cyclesheet1_2c.html"</td>
+  </tr>
+</table>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------

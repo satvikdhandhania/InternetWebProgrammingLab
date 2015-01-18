@@ -1,0 +1,62 @@
+
+ACTIVITY 5
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Advanced</title>
+</head>
+<body>
+	<figure>
+		<img src="Z:\Sem6\IWP\Workspace\Cyclesheet1\Activity5\tulips.jpg" height="300px" width="250px" /> 
+		<figcaption>These flowers are beautiful...</figcaption>
+	</figure>
+	<audio controls muted loop autoplay>
+		<source src="Z:\Sem6\IWP\Workspace\Cyclesheet1\Activity5\maid.mp3" type="audio/mpeg">
+	</audio>
+<video height="100px" width="100px">
+<source src="Z:\Sem6\IWP\Workspace\Cyclesheet1\Activity5\vlc.wmv" type="video/wmv">
+</video>
+<br></br>
+<canvas id="myCanvas"></canvas>
+<script type="text/javascript">
+var canvas=document.getElementById('myCanvas');
+var ctx=canvas.getContext('2d');
+ctx.fillStyle='#FF0000';
+ctx.fillRect(0,0,80,100);
+</script>
+<br></br>
+<embed src="hello.swf" type="application/shockwave.flash" height="200px" width="200px">
+</body> 
+------------------------------------------------------------------------------------------------------------------------------
+ACTIVITY 6
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+div.ex
+{
+	width:100px;
+	height:50px;
+	padding-bottom:20px;
+	padding-right:20px;
+	padding-top:20px;
+	padding-left:20px;
+	border-top:5px solid yellow;
+	border-bottom:5px solid grey;
+	border-right:5px solid grey;
+	border-left:5px solid grey;
+}
+</style>
+</head>
+
+<body>
+
+<div class="ex">
+Hello World</div>
+
+
+</body>
+</html>

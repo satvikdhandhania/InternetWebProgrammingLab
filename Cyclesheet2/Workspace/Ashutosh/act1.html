@@ -1,0 +1,51 @@
+<html>
+<head><title>Greeting</title>
+<style>
+h1{
+text-align:center;
+color:#FF6644;
+}
+p{
+
+margin-left:20px;
+font-weight:900;
+color:#22ff55;
+}
+body{
+background-color:#D2D2D2; 
+background-image:url('time1.jpg');
+background-size:1368px 700px;
+background-repeat:no-repeat;
+}
+</style>
+</head>
+<body >
+<h1>WELCOME USER</h1>
+<p> Current Date and Time </p>
+<p id="date"></p>
+<button onclick="date();">Click!</button>
+<script>
+function date()
+{
+var date=new Date();
+var day = date.getDate(); 
+var month = date.getMonth()+1;//January is 0! 
+var year = date.getFullYear(); 
+var hour= date.getHours();
+var min=date.getMinutes();
+var string;
+if(hour<12)
+string="Good Morning";
+if(12<hour<16)
+string="Good Afternoon";
+if(16<hour<20)
+string="Good Evening";
+if(hour>20)
+string="Good Night";
+if(day<10){day='0'+day} 
+if(month<10){month='0'+month} 
+alert('welcome User \n Today date is '+year+'/'+month+'/'+day+'\n'+string);
+}
+</script>
+</body>
+<html>

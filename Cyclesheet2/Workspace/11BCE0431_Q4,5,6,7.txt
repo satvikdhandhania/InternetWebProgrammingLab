@@ -1,0 +1,321 @@
+---------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 4
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS</title>
+    <script>
+        function submitted() {
+            var form = document.getElementById('form1');
+            var number = form.box.value;
+            calcGrade(number);
+            return;
+        }
+
+        function calcGrade(i) {
+            var grade = '';
+            if (i >= 90)
+                grade = 'S';
+            else if (i >= 80 && i < 90)
+                grade = 'A';
+            else if (i >= 70 && i < 80)
+                grade = 'B';
+            else if (i >= 60 && i < 70)
+                grade = 'C';
+            else if (i >= 55 && i < 60)
+                grade = 'D';
+            else if (i >= 50 && i < 55)
+                grade = 'E';
+            else
+                grade = 'F';
+
+            var elem = document.getElementById("grade");
+            elem.innerHTML = "";
+            elem.innerHTML += grade;
+        }
+    </script>
+    <style>
+        #grade 
+        {
+            font-size:3.5em;
+            color:Red;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" action="#">  
+        <input class="inputBox" type="number" name="box" />
+        <input class="inputButton" type="button" value="Calculate" onclick="submitted()"/>
+    </form>
+    <div id="grade"></div>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 5
+
+<html>
+<head>
+<title>Digital Clock</title>
+<style>
+#div1{
+width:800px;
+height:300px;
+border:1px solid #d4ffd4;
+margin-top:170px;
+}
+#div2{
+width:700px;
+height:200px;
+
+border:50px solid #d4ffd4;
+}
+#div3{
+width:600px;
+height:100px;
+background-color:#191919;
+border:50px solid #4b4b4b;
+}
+#list{
+list-style:none;
+margin-left:5px;
+}
+#list li{
+float:left;
+margin:5px 10px 20px 25px;
+}
+#time{
+clear:both;
+font-size:35px;
+display:inline;
+margin-left:170px;
+color:white;
+}
+#ak{
+color:white;
+font-style:normal;
+margin-left:150px;
+}
+</style>
+<script>
+function starttime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+if(h>12)
+var mi="PM";
+else
+var mi="AM";
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('time').innerHTML=h+":"+m+":"+s;
+document.getElementById("ak").innerHTML=mi;
+t=setTimeout(function(){starttime()},500);
+switch(today.getDay())
+{
+case 0 : document.getElementById("SUN").style.color="white";
+break;
+case 1 : document.getElementById("MON").style.color="white";
+break;
+case 2 : document.getElementById("TUE").style.color="white";
+break;
+case 3 : document.getElementById("WED").style.color="white";
+break;
+case 4 : document.getElementById("THU").style.color="white";
+break;
+case 5 : document.getElementById("FRI").style.color="white";
+break;
+case 6 : document.getElementById("SAT").style.color="white";
+break;
+}
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+
+</script>
+</head>
+<body onload="starttime()">
+<center>
+<div id="div1">
+<div id="div2">
+<div id="div3">
+<ul id="list">
+<li id="SUN">SUN</li><li id="MON">MON</li><li id="TUE">TUE</li><li id="WED">WED</li><li id="THU">THU</li><li id="FRI">FRI</li><li id="SAT">SAT</li>
+</ul>
+<div id="time"></div>
+<b id="ak"></b>
+</div>
+</div>
+</div>
+</center>
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 6
+<html>
+<head>
+<title>Passport Form</title>
+<style>
+#div1,#div2{
+background-color:#2A7FFF;
+margin-top:30px;
+margin-left:10px;
+margin-bottom:10px;
+}
+b{margin-left:10px;
+margin-right:10px;}
+#fname,#lname,#faname,#faocc{
+margin-left:10px;
+padding-top:10px;
+margin-bottom:10px;
+}
+#faname,#nation,#gender,#mar,#dob{margin-left:30px;margin-bottom:10px;margin-top:10px;}
+#fanam{margin-left:80px;margin-bottom:10px;}
+#faoc{margin-left:70px;}
+#fnam,#lnam{
+margin-left:50px;
+margin-bottom:10px;
+}
+#selnat{margin-left:110px;margin-top:10px;}
+#idob{margin-left:90px;margin-bottom:10px;margin-top:10px}
+#selgen{margin-left:130px;margin-top:10px;}
+#selmar{margin-left:90px;margin-top:10px;}
+#adr,#state,#dis,#pin,#phn{margin-left:30px;margin-top:10px;}
+#iadr{margin-left:90px;margin-top:10px;}
+#selstate,#iphn{margin-left:110px;margin-top:10px;}
+#idis,#ipin{margin-left:100px;margin-top:10px;}
+button{
+margin-top:20px;
+margin-left:50px;
+width:80px;
+height:30px;
+}
+</style>
+</head>
+<body style="background-color:#AAFFFF">
+<div id="div1"><b>Applicant's Information(Enter Full Name and do not use abbreviations)</b></div>
+<div id="container">
+<form nonvalidate>
+<b>1(a).</b><label id="fname">Applicant First Name: </label>
+<input type="text" id="fnam" size="40" required><br>
+<b>1(b).</b><label id="lname">Applicant Last Name: </label>
+<input type="text" id="lnam" size="40" required><br>
+<b> 2.  </b><label id="faname">Father's Name: </label>
+<input type="text" id="fanam" size="40" required><br>
+<b> 3.  </b><label id="faocc">Father's Occupation: </label>
+<input type="text" id="faoc" size="40" required><br>
+<b>4.</b><label id="nation">Nationality :</label>
+<select id="selnat" required>
+<option>Indian</option>
+<option>Non-Indian</option>
+</select><br>
+<b>5.</b><label id="dob">Date Of Birth :</label>
+<input type="date" id="idob" required><br>
+<b>6.</b><label id="gender">Gender : </label>
+<select id="selgen" required>
+<option>Male</option>
+<option>Female</option>
+</select><br>
+<b>7.</b><label id="mar">Marital status : </label>
+<select id="selmar" required>
+<option>Single</option>
+<option>Married</option>
+</select><br>
+<div id="div2"><b>Permanent Residential Address.</b></div>
+<b>8(a).</b><label id="adr">Address :</label>
+<input type="text" size="40" id="iadr" required><br>
+<b>8(b).</b><label id="state">State :</label>
+<select id="selstate" required>
+<option>Bihar</option>
+<option>Rajasthan</option>
+<option>Delhi</option>
+<option>Chandigarh</option>
+<option>Tamilnadu</option>
+</select><br>
+<b>8(c).</b><label id="dis">District  :</label>
+<input type="text" size="40" id="idis" required><br>
+<b>8(d).</b><label id="pin">Pincode  :</label>
+<input type="text" size="20" id="ipin" required><br>
+<b>8(e).</b><label id="phn">Phone   :</label>
+<input type="text" size="20" id="iphn" required><br>
+<button type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION 7
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+function setCookie(cname,cvalue,exdays)
+{
+var d = new Date();
+d.setTime(d.getTime()+(exdays*24*60*60*1000));
+var expires = "expires="+d.toUTCString();
+document.cookie = cname+"="+cvalue+"; "+expires;
+}
+
+function getCookie(cname)
+{
+var name = cname + "=";
+var ca = document.cookie.split(';');
+for(var i=0; i<ca.length; i++) 
+  {
+var word;
+  var c = ca[i].trim();
+
+  if (c.indexOf(name)==0) 
+{
+return (c.substring(name.length,c.length));
+ 
+} 
+}
+return "";
+}
+
+function checkCookie()
+{
+var temp=0;
+var counter;
+var user=getCookie("username");
+var visits=getCookie("counter");
+if (user!="")
+  {
+  temp = parseInt(visits);
+  temp = temp + 1;
+  
+  counter = temp.toString();
+  setCookie("counter",counter,30);
+  visits = counter;
+  alert("Welcome again " + user);
+ alert("no. of visits= " + visits);
+  }
+else 
+  {
+  counter = '0';
+  user = prompt("Please enter your name:","");
+  if (user!="" && user!=null)
+    {
+    setCookie("username",user,30);
+	setCookie("counter",counter,30);
+    }
+  }
+}
+
+</script>
+</head>
+<body onload="checkCookie()">
+</body>
+</html>

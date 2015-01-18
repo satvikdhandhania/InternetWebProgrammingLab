@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			Index of IWP_lab_php
+		</title>
+	</head>
+	<body>
+		<a href="1a.php">1a.php</a><br>
+		<a href="1b.php">1b.php</a><br>
+		<a href="2.php">2.php</a><br>
+		<a href="3.php">3.html</a><br>
+		<a href="4.php">4.html</a><br>
+		<a href="5.php">5.html</a><br>
+		<a href="6.php">6.html</a><br>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+p{
+	outline-style: dashed;
+	outline-width: 1px;
+	max-width: 200px;
+}
+
+#pd1{
+	border-style: solid;
+	border-width: 30px;
+	border-color: gray;
+	border-top-color: yellow;
+	padding: 5px;
+	max-width: 300px;
+	
+}
+
+.p{
+	outline-style: dashed;
+	outline-width: 5px;
+	outline-offset: 5px;
+	pading: 10px;
+	max-width:400px;
+}

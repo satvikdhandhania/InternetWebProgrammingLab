@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+<title>Activity3</title>
+</head>
+<body>
+    <form>
+      <span>Enter Number 1 :</span><input id="num1" type="text" name="num1"><br>
+      <span>Enter Number 2 :</span><input id="num2" type="text" name="num2"><br>
+	  <input type="button" value="+" style="color:black;background-color:green;" onclick="calculateadd()";>
+	  <input type="button" value="-" style="color:black;background-color:green;" onclick="calculatesub()";>
+      <input type="button" value="*" style="color:black;background-color:green;" onclick="calculatemult()";> 
+	  <input type="button" value="/" style="color:black;background-color:green;" onclick="calculatediv()";> 
+	  <input type="button" value="=" style="color:black;background-color:green;" onclick="calculateeq()";> 
+	  <p id="p">Result</p>
+    </form>
+	<script type="text/javascript">
+       function check()
+	   {
+	      var s=document.getElementById("num1").value;
+		  var g=document.getElementById("num2").value;
+		 // document.write(s+""+g+"\n");
+		  if(isNaN(s)||isNaN(g))
+		  {
+			 alert("Enter Only Numbers !! ");
+			 return 0;
+		  }
+		  
+		 return 1;
+	   }
+	   function calculateadd()
+       { 
+	     check();
+		 {
+          var h=document.getElementById("num1").value;
+		  var k=document.getElementById("num2").value;
+		  var z=parseInt(h)+parseInt(k); 
+	      document.getElementById("p").innerHTML=z;;
+		 }
+       }
+	   function calculateeq()
+       {
+	     if(check())
+		 {
+          var s=document.getElementById("num1").value;
+		  var g=document.getElementById("num2").value;
+		 }
+	   }
+	   function calculatesub()
+       {
+	     if(check())
+		 {
+          var s=document.getElementById("num1").value;
+		  var g=document.getElementById("num2").value;
+		 }
+	   }
+	   function calculatemult()
+       {
+	     if(check())
+		 {
+          var s=document.getElementById("num1").value;
+		  var g=document.getElementById("num2").value;
+		 }
+	   }
+	   function calculatediv()
+       {
+	     if(check())
+		  {
+          var s=document.getElementById("num1").value;
+		  var g=document.getElementById("num2").value;
+		 }
+	   }
+    </script>
+</body>
+</html>

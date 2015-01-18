@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> Activity 3 </title>
+	</head>
+	<body>
+		<h1>Activity 3</h1>
+		<p>
+			Write a PHP Script to upload a file with the following constraints
+			a) Text, Images (JPEG and GIF), Portable Document Format (pdf) are only allowed
+			b) Maximum File Size is 2 MB.
+			c) Prevent file duplication when a file is uploaded again.
+		</p>
+		<form enctype="multipart/form-data" action="3upload.php" method="post">
+			<!-- MAX_FILE_SIZE must precede the file input field -->
+			<input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
+			<!-- Name of input element determines name in $_FILES array -->
+			Send this file:
+			<input type="file" name="file" /><br>
+			<input type="submit" value="Send File" />
+		</form>
+	</body>
+</html>
